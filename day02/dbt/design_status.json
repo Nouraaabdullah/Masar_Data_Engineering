@@ -1,0 +1,13 @@
+{
+  "scope": "DBT_PROJECT_SPECIFICATION",
+  "adapter": "spark",
+  "method": "session",
+  "adapter_version": "1.9.1",
+  "dbt_core_version": "1.9.8",
+  "models": 6,
+  "singular_tests": 7,
+  "incremental_lookback_days": 3,
+  "lookback_clock": "_ingested_at",
+  "source_registration": "Actual Day 1 Delta snapshots in an isolated workspace",
+  "execution_record": "../verification.json"
+}

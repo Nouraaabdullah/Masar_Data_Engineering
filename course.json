@@ -1,0 +1,457 @@
+{
+  "code": "SDA-DSC-214",
+  "title_en": "Modern Data Engineering for AI Systems",
+  "title_ar": "هندسة البيانات الحديثة لأنظمة الذكاء الاصطناعي",
+  "instructor_en": "Meaad Al-Marri",
+  "instructor_ar": "ميعاد المري",
+  "days": 5,
+  "hours_per_day": 6,
+  "hours_total": 30,
+  "mode": "in_person",
+  "max_learners": 20,
+  "support": "beginner_scaffolding",
+  "dataset": "MASAR_SMALL_V1",
+  "labs_are_final_project": true,
+  "separate_final_project": false,
+  "distinction_required": false,
+  "remote_repository": "https://github.com/almiyead-rgb/masar-modern-data-engineering",
+  "published": true,
+  "formal_assessment_policy": "ORGANIZER_POLICY",
+  "outcome_numbering": "TRAINING_CONTENT.md",
+  "learning_outcomes": [
+    {
+      "id": "LO1",
+      "en": "Compare warehouses, lakes and lakehouse architectures for a stated use case.",
+      "ar": "المقارنة بين مستودعات البيانات والبحيرات ومعمارية Lakehouse لحالة استخدام محددة."
+    },
+    {
+      "id": "LO2",
+      "en": "Explain compute–storage separation and its cost, elasticity and scale implications.",
+      "ar": "شرح فصل الحوسبة عن التخزين وأثره على التكلفة والمرونة والتوسع."
+    },
+    {
+      "id": "LO3",
+      "en": "Design an ELT pipeline for a modern data environment.",
+      "ar": "تصميم خط ELT ملائم لبيئة بيانات حديثة."
+    },
+    {
+      "id": "LO4",
+      "en": "Implement Delta Lake tables with ACID transactions and schema enforcement.",
+      "ar": "تنفيذ جداول Delta Lake بمعاملات ACID وفرض المخطط."
+    },
+    {
+      "id": "LO5",
+      "en": "Develop streaming and event-driven ingestion patterns.",
+      "ar": "تطوير أنماط الاستيعاب المتدفق والمعتمد على الأحداث."
+    },
+    {
+      "id": "LO6",
+      "en": "Apply quality, observability and governance controls across the pipeline.",
+      "ar": "تطبيق ضوابط الجودة والمراقبة والحوكمة عبر خط المعالجة."
+    },
+    {
+      "id": "LO7",
+      "en": "Connect lakehouse components to AI, reporting and analytics consumers.",
+      "ar": "ربط مكونات Lakehouse بمستهلكي الذكاء الاصطناعي والتقارير والتحليلات."
+    },
+    {
+      "id": "LO8",
+      "en": "Build a working Mini-Lakehouse with Delta Lake and PySpark.",
+      "ar": "بناء Mini-Lakehouse متكامل وعامل باستخدام Delta Lake وPySpark."
+    }
+  ],
+  "day_plan": [
+    {
+      "day": 1,
+      "en": "Foundations and Bronze",
+      "ar": "الأساسيات والطبقة البرونزية",
+      "labs": [
+        "01",
+        "02"
+      ],
+      "los": [
+        "LO1",
+        "LO2"
+      ],
+      "question_en": "What arrived, why preserve it, and how should compute be operated?",
+      "question_ar": "ما البيانات التي وصلت؟ لماذا نحفظها؟ وكيف نختار طريقة تشغيل الحوسبة؟",
+      "output_en": "Raw source inspection, Bronze tables, architecture notes and cost evidence.",
+      "output_ar": "فحص المصادر، وجداول Bronze، وملاحظات القرار المعماري وأدلة التكلفة.",
+      "status": "PUBLISHED_NATIVE_VERIFIED",
+      "notebook": "day01/STUDENT.ipynb"
+    },
+    {
+      "day": 2,
+      "en": "ELT and Silver",
+      "ar": "التحويل وطبقة Silver",
+      "labs": [
+        "03"
+      ],
+      "los": [
+        "LO3"
+      ],
+      "question_en": "How do repeated and late inputs become one trustworthy trip table?",
+      "question_ar": "كيف نحول المدخلات المكررة والمتأخرة إلى جدول رحلات واحد موثوق؟",
+      "output_en": "Typed staging data, conformed Silver and idempotency/backfill evidence.",
+      "output_ar": "بيانات مرحلية موحدة الأنواع، وSilver منقحة، وأدلة عدم التكرار والاستكمال المتأخر.",
+      "status": "PUBLISHED_NATIVE_VERIFIED",
+      "notebook": "day02/STUDENT.ipynb"
+    },
+    {
+      "day": 3,
+      "en": "Reliable Delta tables",
+      "ar": "جداول Delta الموثوقة",
+      "labs": [
+        "04"
+      ],
+      "los": [
+        "LO4"
+      ],
+      "question_en": "How can a table change safely while preserving an auditable history?",
+      "question_ar": "كيف نغير جدولًا بأمان مع الاحتفاظ بتاريخ قابل للتدقيق؟",
+      "output_en": "Schema and constraint checks, MERGE evidence, version comparison and safe maintenance notes.",
+      "output_ar": "فحوص المخطط والقيود، وأدلة MERGE، ومقارنة النسخ، وتوثيق الصيانة الآمنة.",
+      "status": "PUBLISHED_NATIVE_VERIFIED",
+      "notebook": "day03/STUDENT.ipynb"
+    },
+    {
+      "day": 4,
+      "en": "Streaming and trust",
+      "ar": "التدفق وموثوقية البيانات",
+      "labs": [
+        "05",
+        "06"
+      ],
+      "los": [
+        "LO5",
+        "LO6"
+      ],
+      "question_en": "How can events arrive continuously without silently corrupting trusted outputs?",
+      "question_ar": "كيف نستقبل الأحداث باستمرار دون إفساد المخرجات الموثوقة بصمت؟",
+      "output_en": "Kafka/Structured Streaming recovery evidence, quality gate, quarantine and governance documentation.",
+      "output_ar": "أدلة الاستئناف باستخدام Kafka وStructured Streaming، وبوابة جودة وعزل وتوثيق الحوكمة.",
+      "status": "PUBLISHED_NATIVE_VERIFIED",
+      "notebook": "day04/STUDENT.ipynb"
+    },
+    {
+      "day": 5,
+      "en": "Integrate, serve and submit",
+      "ar": "التكامل والتقديم والتسليم",
+      "labs": [
+        "07",
+        "08"
+      ],
+      "los": [
+        "LO7",
+        "LO8"
+      ],
+      "question_en": "Can one reproducible pipeline supply consistent AI and BI outputs?",
+      "question_ar": "هل ينتج خط قابل لإعادة التشغيل مخرجات متسقة للذكاء الاصطناعي وذكاء الأعمال؟",
+      "output_en": "Integrated Mini-Lakehouse, Gold outputs, AI/BI reconciliation and the same cumulative project submission.",
+      "output_ar": "Mini-Lakehouse متكاملة، ومخرجات Gold، وتسوية AI وBI، وتسليم المشروع التراكمي نفسه.",
+      "status": "PUBLISHED_NATIVE_VERIFIED",
+      "notebook": "day05/STUDENT.ipynb"
+    }
+  ],
+  "labs": [
+    {
+      "id": "01",
+      "day": 1,
+      "en": "Land and inspect raw feeds",
+      "ar": "استقبال المصادر وفحصها",
+      "concept": "day01/CONCEPTS.md",
+      "los": [
+        "LO1",
+        "LO8"
+      ],
+      "inputs": [
+        "trips.csv",
+        "drivers.csv",
+        "gps.ndjson"
+      ],
+      "output": [
+        "mini_lakehouse/bronze/",
+        "LAB01_NOTES.md"
+      ],
+      "checks_en": [
+        "Read the source manifest and verify file hashes before processing.",
+        "Create real Delta Bronze tables with source and ingestion metadata.",
+        "Replay trips without overwriting history and explain the intended Bronze growth.",
+        "Record at least three quality risks; distinguish observed defects from risks."
+      ],
+      "checks_ar": [
+        "اقرأ سجل البيانات وتحقق من بصمات الملفات قبل المعالجة.",
+        "أنشئ جداول Bronze فعلية بصيغة Delta مع معلومات المصدر والاستيعاب.",
+        "أعد استقبال الرحلات دون مسح التاريخ واشرح النمو المقصود في Bronze.",
+        "وثق ثلاثة مخاطر جودة على الأقل وميّز العيب المرصود من الخطر المحتمل."
+      ],
+      "status": "PARTIAL",
+      "walkthrough": "day01/labs/lab01/WALKTHROUGH.md",
+      "notebook": "day01/STUDENT.ipynb"
+    },
+    {
+      "id": "02",
+      "day": 1,
+      "en": "Cost and local scan evidence",
+      "ar": "التكلفة وأدلة الفحص المحلي",
+      "concept": "day01/CONCEPTS.md",
+      "los": [
+        "LO2",
+        "LO8"
+      ],
+      "inputs": [
+        "trips.csv"
+      ],
+      "output": [
+        "BENCHMARKS.md",
+        "LAB02_NOTES.md"
+      ],
+      "checks_en": [
+        "State every assumption and separate hypothetical teaching units from currency.",
+        "Compare always-on and scheduled operation, including overhead and a counterexample.",
+        "Measure actual Spark scans with equal-result checks and query plans.",
+        "Report observed timings without promising a speed-up on a tiny dataset."
+      ],
+      "checks_ar": [
+        "حدد الافتراضات وافصل وحدات التعليم الافتراضية عن العملة.",
+        "قارن التشغيل المستمر والمجدول مع التكاليف الإضافية ومثال مضاد.",
+        "قس عمليات Spark الفعلية مع فحص تساوي النتائج وخطط الاستعلام.",
+        "سجل الأزمنة المرصودة دون ضمان تسارع على مجموعة صغيرة."
+      ],
+      "status": "PARTIAL",
+      "walkthrough": "day01/labs/lab02/WALKTHROUGH.md",
+      "notebook": "day01/STUDENT.ipynb"
+    },
+    {
+      "id": "03",
+      "day": 2,
+      "en": "Build incremental Silver (3a + 3b)",
+      "ar": "بناء Silver التراكمية (3a و3b)",
+      "concept": "day02/CONCEPTS.md",
+      "los": [
+        "LO3",
+        "LO8"
+      ],
+      "inputs": [
+        "trips.csv",
+        "drivers.csv",
+        "late_trips.csv"
+      ],
+      "output": [
+        "mini_lakehouse/silver/",
+        "LAB03_NOTES.md"
+      ],
+      "checks_en": [
+        "Type columns and normalize timestamps consistently; preserve raw source files.",
+        "Normalize labels and validate driver relationships before publishing Silver.",
+        "Deduplicate on a documented business key and deterministic precedence rule.",
+        "Ingest the fixed late-trip batch and demonstrate that rerunning does not duplicate results."
+      ],
+      "checks_ar": [
+        "وحد أنواع الأعمدة والتوقيتات بصورة متسقة مع الحفاظ على ملفات المصدر.",
+        "وحد المسميات وتحقق من علاقة السائقين قبل تقديم Silver.",
+        "أزل التكرار بمفتاح أعمال وقاعدة أولوية حتمية موثقة.",
+        "استقبل دفعة الرحلات المتأخرة الثابتة وأثبت أن الإعادة لا تضاعف النتائج."
+      ],
+      "status": "PARTIAL",
+      "walkthrough": "day02/labs/lab03/WALKTHROUGH.md",
+      "notebook": "day02/STUDENT.ipynb"
+    },
+    {
+      "id": "04",
+      "day": 3,
+      "en": "Delta operations (4a + 4b)",
+      "ar": "عمليات Delta (4a و4b)",
+      "concept": "day03/CONCEPTS.md",
+      "los": [
+        "LO4",
+        "LO8"
+      ],
+      "inputs": [
+        "correction.csv",
+        "schema_change.csv",
+        "quality_cases.csv"
+      ],
+      "output": [
+        "LAB04_NOTES.md",
+        "BENCHMARKS.md"
+      ],
+      "checks_en": [
+        "Observe real Delta transaction-log commits and enforce the table schema.",
+        "Reject invalid writes without silently dropping failed checks.",
+        "Apply the correction twice and compare logical table contents.",
+        "Read earlier versions and run maintenance/delete exercises only on isolated training copies."
+      ],
+      "checks_ar": [
+        "افحص معاملات Delta الفعلية وطبق مخطط الجدول.",
+        "ارفض الكتابات غير الصالحة دون إسقاط الاختبارات المخفقة بصمت.",
+        "طبق التصحيح مرتين وقارن المحتوى المنطقي للجدول.",
+        "اقرأ النسخ السابقة ونفذ الصيانة والحذف على نسخ تدريبية معزولة فقط."
+      ],
+      "status": "PARTIAL",
+      "walkthrough": "day03/labs/lab04/WALKTHROUGH.md",
+      "engine_notebooks": [
+        "notebooks/day03/02_delta_transactions.ipynb",
+        "notebooks/day03/03_safe_maintenance.ipynb"
+      ],
+      "notebook": "day03/STUDENT.ipynb"
+    },
+    {
+      "id": "05",
+      "day": 4,
+      "en": "Stream events and resume safely",
+      "ar": "تدفق الأحداث والاستئناف الآمن",
+      "concept": "day04/CONCEPTS.md",
+      "los": [
+        "LO5",
+        "LO8"
+      ],
+      "inputs": [
+        "gps.ndjson",
+        "gps_replay.ndjson",
+        "gps_late.ndjson"
+      ],
+      "output": [
+        "LAB05_NOTES.md",
+        "mini_lakehouse/bronze/"
+      ],
+      "checks_en": [
+        "Demonstrate an actual Kafka producer/consumer and Spark streaming source.",
+        "Assign a separate persistent checkpoint to each streaming query.",
+        "Record the observed effect of stop/restart and duplicate event deliveries.",
+        "Explain event time, processing time and late-event handling from saved evidence."
+      ],
+      "checks_ar": [
+        "نفذ منتجًا ومستهلكًا فعليين في Kafka ومصدر تدفق في Spark.",
+        "خصص نقطة تحقق مستديمة منفصلة لكل استعلام متدفق.",
+        "سجل أثر الإيقاف والاستئناف وإعادة وصول الأحداث على النتائج.",
+        "اشرح وقت الحدث ووقت المعالجة والتعامل مع التأخر من الأدلة المحفوظة."
+      ],
+      "status": "PARTIAL",
+      "walkthrough": "day04/labs/lab05/WALKTHROUGH.md",
+      "notebook": "day04/STUDENT.ipynb"
+    },
+    {
+      "id": "06",
+      "day": 4,
+      "en": "Quality gate and governance",
+      "ar": "بوابة الجودة والحوكمة",
+      "concept": "day04/CONCEPTS.md",
+      "los": [
+        "LO6",
+        "LO8"
+      ],
+      "inputs": [
+        "quality_cases.csv"
+      ],
+      "output": [
+        "LAB06_NOTES.md",
+        "GOVERNANCE.md",
+        "reports/quality/"
+      ],
+      "checks_en": [
+        "Run an actual Great Expectations suite on the intended table.",
+        "Quarantine invalid records with reasons and stop unsafe promotion.",
+        "Record quality, freshness and run-health observations against fixed scenario times.",
+        "Document lineage, ownership, intended access and retention; use synthetic data only."
+      ],
+      "checks_ar": [
+        "شغل مجموعة فحوص فعلية باستخدام Great Expectations على الجدول المقصود.",
+        "اعزل السجلات المعيبة مع أسبابها وامنع الترقية غير الآمنة.",
+        "وثق الجودة والحداثة وسلامة التشغيل بالاستناد إلى أوقات السيناريو الثابتة.",
+        "وثق تتبع البيانات وملكيتها والوصول والاحتفاظ؛ واستخدم البيانات الاصطناعية فقط."
+      ],
+      "status": "PARTIAL",
+      "walkthrough": "day04/labs/lab06/WALKTHROUGH.md",
+      "notebook": "day04/STUDENT.ipynb"
+    },
+    {
+      "id": "07",
+      "day": 5,
+      "en": "Integrate the Mini-Lakehouse",
+      "ar": "تكامل Mini-Lakehouse",
+      "concept": "day05/CONCEPTS.md",
+      "los": [
+        "LO8"
+      ],
+      "inputs": [
+        "Validated Day 4 Delta trips",
+        "Distinct Day 4 Delta events",
+        "scenario_schedule.json"
+      ],
+      "output": [
+        "mini_lakehouse/",
+        "LAB07_NOTES.md",
+        "DECISIONS.md"
+      ],
+      "checks_en": [
+        "Run the dependency-ordered Bronze → Silver → Gold flow.",
+        "Prove that failures prevent unsafe downstream publication.",
+        "Rerun the same logical input and reconcile content, not volatile run timestamps.",
+        "Record one recovery attempt and preserve daily evidence rather than rebuilding undocumented work."
+      ],
+      "checks_ar": [
+        "شغل Bronze ثم Silver ثم Gold بترتيب الاعتماد.",
+        "أثبت أن الإخفاق يمنع تقديم مخرجات لاحقة غير آمنة.",
+        "أعد المدخل المنطقي نفسه وسوّ المحتوى لا توقيتات التشغيل المتغيرة.",
+        "وثق محاولة تعافٍ واحتفظ بأدلة الأيام بدل إعادة بناء عمل غير موثق."
+      ],
+      "status": "PARTIAL",
+      "walkthrough": "day05/labs/lab07/WALKTHROUGH.md",
+      "notebook": "day05/STUDENT.ipynb"
+    },
+    {
+      "id": "08",
+      "day": 5,
+      "en": "Serve AI and BI; submit the same project",
+      "ar": "تقديم AI وBI وتسليم المشروع نفسه",
+      "concept": "day05/CONCEPTS.md",
+      "los": [
+        "LO7",
+        "LO8"
+      ],
+      "inputs": [
+        "Committed Day 5 release manifest",
+        "Pinned Gold/AI/BI Delta tables"
+      ],
+      "output": [
+        "reports/serving/",
+        "LAB08_NOTES.md",
+        "README.md"
+      ],
+      "checks_en": [
+        "Prepare feature and reporting outputs with explicit grains and definitions.",
+        "Exclude information unavailable at the stated prediction time from features.",
+        "Reconcile trip and fare totals between the trusted table and BI output.",
+        "Submit the accumulated repository and evidence, not a separate final assignment."
+      ],
+      "checks_ar": [
+        "جهز مخرجات الخصائص والتقارير مع تعريف مستوى الصف والمقاييس.",
+        "استبعد من الخصائص المعلومات غير المتاحة وقت التنبؤ المحدد.",
+        "سوّ أعداد الرحلات والأجور بين الجدول الموثوق ومخرج BI.",
+        "سلم المستودع والأدلة المتراكمة وليس تكليفًا نهائيًا منفصلًا."
+      ],
+      "status": "PARTIAL",
+      "walkthrough": "day05/labs/lab08/WALKTHROUGH.md",
+      "notebook": "day05/STUDENT.ipynb"
+    }
+  ],
+  "dataset_manifest_sha256": "20a7e45bed2980b9394c10e8532da3b9f40f614366bb2df26a88610253e768e3",
+  "publication_authorized": false,
+  "runtime_target_file": "runtime-target.json",
+  "student_entrypoint": "README.md",
+  "published_days": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "learner_notebooks": [
+    "day01/STUDENT.ipynb",
+    "day02/STUDENT.ipynb",
+    "day03/STUDENT.ipynb",
+    "day04/STUDENT.ipynb",
+    "day05/STUDENT.ipynb"
+  ]
+}

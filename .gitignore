@@ -1,0 +1,30 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.env
+.env.*
+*.pem
+*.key
+outputs/
+workspaces/
+mini_lakehouse/
+.sparkStaging/
+spark-warehouse/
+metastore_db/
+derby.log
+.DS_Store
+instructor_only/
+authoring_private/
+INSTRUCTOR_PACKAGE.md
+*PRIVATE*
+*.pptx
+
+# dbt-generated files and local profiles are not course source.
+day02/dbt/target/
+day02/dbt/logs/
+day02/dbt/dbt_packages/
+day02/dbt/profiles.yml
+
+# Generated validation logs and notebook attempts
+evidence/
