@@ -1,4 +1,4 @@
-# Masar Mini-Lakehouse — Noura Abdullah
+# Masar Mini-Lakehouse — Noura Abdullah Almadhi
 
 > An end-to-end modern data engineering project implementing a reproducible **Bronze → Silver → Gold** lakehouse with batch ELT, Delta Lake reliability, Kafka streaming, data quality controls, governance, and serving outputs for both BI and AI.
 
