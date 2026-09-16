@@ -1,0 +1,480 @@
+{
+  "artifacts": {
+    "events": {
+      "commits": [
+        {
+          "path": "mini_lakehouse/silver/gps_events_day04/1084ca306d1c477caf1ab428fa56c3ad/_delta_log/00000000000000000000.json",
+          "sha256": "43d352a7e0387c453fde237ec470633b4c41d9c79dcda25c7e218692fa30d24d"
+        }
+      ],
+      "data_files": [
+        {
+          "path": "mini_lakehouse/silver/gps_events_day04/1084ca306d1c477caf1ab428fa56c3ad/part-00000-014a2616-99cf-4d10-b31d-e48bbf69c94b-c000.snappy.parquet",
+          "sha256": "29126d775d088bfc5b0d5e8ab232f717630c977d60dccee7945acd68fa008e59"
+        }
+      ]
+    },
+    "raw": {
+      "commits": [
+        {
+          "path": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad/_delta_log/00000000000000000000.json",
+          "sha256": "ceb8b1931a6b7f4877d4e5812a2584957b7a17cb1593c492b6dd063eb44b88b3"
+        },
+        {
+          "path": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad/_delta_log/00000000000000000001.json",
+          "sha256": "85d1dc9213afbcc6f9d7edb6624271258de37c6894005b8a20bdc25fc3cca3dc"
+        },
+        {
+          "path": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad/_delta_log/00000000000000000002.json",
+          "sha256": "8cc74728e2ed5373252762664811cf37529abbebfb940d1d74b5a5f8e4a4b21c"
+        },
+        {
+          "path": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad/_delta_log/00000000000000000003.json",
+          "sha256": "146d027baae9d11a832c14bd44628bb93edc2962f94f9258d2d34217a4280a02"
+        },
+        {
+          "path": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad/_delta_log/00000000000000000004.json",
+          "sha256": "69cc2f67d53a7c511b1e065c156d75486c59cf88c708a7c083ebe5550dd305da"
+        }
+      ],
+      "data_files": [
+        {
+          "path": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad/part-00000-0921a5f0-a242-4b85-a0ea-0feefbe09f4e-c000.snappy.parquet",
+          "sha256": "f19856eb9cee3bd344a1d12efe1669259b4a0e23ef14a6748b45ddd1ac3769b1"
+        },
+        {
+          "path": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad/part-00000-1084768a-8ed3-4311-8cbe-e34564534d61-c000.snappy.parquet",
+          "sha256": "310e6d4a6b10468ece109c10ddf3579a9559b5b524afac2e2bcb8acc2502d16b"
+        },
+        {
+          "path": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad/part-00000-147940fd-cedd-4e56-85bf-777e3aa87412-c000.snappy.parquet",
+          "sha256": "23d6d20598bafeeb0614a29ea35e4962a7a41fa2bdc2c4c7c4037880a0c03779"
+        },
+        {
+          "path": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad/part-00000-31ccf686-0a5f-4fb6-96e6-85cd7e355c8e-c000.snappy.parquet",
+          "sha256": "041874bbfd0ed98cbe214da26af747263244cdd01418722883638f933ca2a03b"
+        },
+        {
+          "path": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad/part-00000-9d63c301-9178-406c-b980-52a4b357fe47-c000.snappy.parquet",
+          "sha256": "f98f567bb65061242983703ab5d274f7b29a92b505823302e04b5925bbd6bdc5"
+        },
+        {
+          "path": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad/part-00001-140740f0-b75e-4af4-95a1-d892aed22b2d-c000.snappy.parquet",
+          "sha256": "a3283d20baff97306c4c0a1ea635f37390cace465129b3712dd44861cc495937"
+        },
+        {
+          "path": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad/part-00001-27413d20-9c3e-434a-9d78-03a9694069f5-c000.snappy.parquet",
+          "sha256": "2b6d10271240f25d59565763e04d966197e0f3f3e2846d1ff169fec8e8e405f4"
+        },
+        {
+          "path": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad/part-00001-64218625-b2b3-43ea-a2e0-3422a135a492-c000.snappy.parquet",
+          "sha256": "99b9d4a5693a9ee5ad88aee96f130b57c0fb9dac7445396c1f221ef5be1a865e"
+        }
+      ]
+    }
+  },
+  "checks": {
+    "actual_checkpoint_files_present": true,
+    "all_events_link_to_trusted_trips": true,
+    "checkpoint_same_for_all_phases": true,
+    "event_content_matches_source": true,
+    "late_event_retained": true,
+    "phase_event_counts": true,
+    "phase_transport_counts": true,
+    "producer_consumer_offsets_reconcile": true,
+    "restart_new_execution_ids": true,
+    "restart_same_query_identity": true,
+    "source_json_text_preserved": true,
+    "transport_keys_always_unique": true,
+    "unique_events_delta_readback": true
+  },
+  "dataset_manifest_sha256": "20a7e45bed2980b9394c10e8532da3b9f40f614366bb2df26a88610253e768e3",
+  "engine_executed": true,
+  "event_table": "mini_lakehouse/silver/gps_events_day04/1084ca306d1c477caf1ab428fa56c3ad",
+  "kafka_executed": true,
+  "not_proven": [
+    "crash recovery stress",
+    "broker failover",
+    "distributed deployment",
+    "watermark execution"
+  ],
+  "phases": [
+    {
+      "business_event_digest": "e28fad43b3399ac26960a6f10ee08deeb6e040fe71f245208ad4099801e213b5",
+      "checkpoint": "checkpoints/day04/gps_1084ca306d1c477caf1ab428fa56c3ad",
+      "phase": "base",
+      "progress": [
+        {
+          "batchId": 0,
+          "durationMs": {
+            "addBatch": 904,
+            "commitOffsets": 29,
+            "getBatch": 12,
+            "latestOffset": 217,
+            "queryPlanning": 31,
+            "triggerExecution": 1233,
+            "walCommit": 33
+          },
+          "id": "86ad4cfc-df0d-4425-bc50-9f25ceb7636d",
+          "inputRowsPerSecond": 0.0,
+          "name": "masar_gps_1084ca306d1c477caf1ab428fa56c3ad",
+          "numInputRows": 72,
+          "processedRowsPerSecond": 58.3941605839416,
+          "runId": "c3b4ba7c-610d-4810-a8f0-1fd05f771371",
+          "sink": {
+            "description": "DeltaSink[/Users/nouraalmadhi/Desktop/Masar_Data_Engineering/outputs/day01_bronze_jnzj35lx/mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad]",
+            "numOutputRows": -1
+          },
+          "sources": [
+            {
+              "description": "KafkaV2[Subscribe[masar-day04-1084ca306d1c477caf1ab428fa56c3ad]]",
+              "endOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 36,
+                  "1": 36
+                }
+              },
+              "inputRowsPerSecond": 0.0,
+              "latestOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 108,
+                  "1": 108
+                }
+              },
+              "metrics": {
+                "avgOffsetsBehindLatest": "72.0",
+                "maxOffsetsBehindLatest": "72",
+                "minOffsetsBehindLatest": "72"
+              },
+              "numInputRows": 72,
+              "processedRowsPerSecond": 58.3941605839416,
+              "startOffset": null
+            }
+          ],
+          "stateOperators": [],
+          "timestamp": "2026-09-15T08:14:16.914Z"
+        },
+        {
+          "batchId": 1,
+          "durationMs": {
+            "addBatch": 299,
+            "commitOffsets": 27,
+            "getBatch": 0,
+            "latestOffset": 0,
+            "queryPlanning": 11,
+            "triggerExecution": 367,
+            "walCommit": 29
+          },
+          "id": "86ad4cfc-df0d-4425-bc50-9f25ceb7636d",
+          "inputRowsPerSecond": 58.205335489086494,
+          "name": "masar_gps_1084ca306d1c477caf1ab428fa56c3ad",
+          "numInputRows": 72,
+          "processedRowsPerSecond": 196.18528610354224,
+          "runId": "c3b4ba7c-610d-4810-a8f0-1fd05f771371",
+          "sink": {
+            "description": "DeltaSink[/Users/nouraalmadhi/Desktop/Masar_Data_Engineering/outputs/day01_bronze_jnzj35lx/mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad]",
+            "numOutputRows": -1
+          },
+          "sources": [
+            {
+              "description": "KafkaV2[Subscribe[masar-day04-1084ca306d1c477caf1ab428fa56c3ad]]",
+              "endOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 72,
+                  "1": 72
+                }
+              },
+              "inputRowsPerSecond": 58.205335489086494,
+              "latestOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 108,
+                  "1": 108
+                }
+              },
+              "metrics": {
+                "avgOffsetsBehindLatest": "36.0",
+                "maxOffsetsBehindLatest": "36",
+                "minOffsetsBehindLatest": "36"
+              },
+              "numInputRows": 72,
+              "processedRowsPerSecond": 196.18528610354224,
+              "startOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 36,
+                  "1": 36
+                }
+              }
+            }
+          ],
+          "stateOperators": [],
+          "timestamp": "2026-09-15T08:14:18.151Z"
+        },
+        {
+          "batchId": 2,
+          "durationMs": {
+            "addBatch": 310,
+            "commitOffsets": 30,
+            "getBatch": 0,
+            "latestOffset": 0,
+            "queryPlanning": 10,
+            "triggerExecution": 377,
+            "walCommit": 25
+          },
+          "id": "86ad4cfc-df0d-4425-bc50-9f25ceb7636d",
+          "inputRowsPerSecond": 195.65217391304347,
+          "name": "masar_gps_1084ca306d1c477caf1ab428fa56c3ad",
+          "numInputRows": 72,
+          "processedRowsPerSecond": 190.9814323607427,
+          "runId": "c3b4ba7c-610d-4810-a8f0-1fd05f771371",
+          "sink": {
+            "description": "DeltaSink[/Users/nouraalmadhi/Desktop/Masar_Data_Engineering/outputs/day01_bronze_jnzj35lx/mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad]",
+            "numOutputRows": -1
+          },
+          "sources": [
+            {
+              "description": "KafkaV2[Subscribe[masar-day04-1084ca306d1c477caf1ab428fa56c3ad]]",
+              "endOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 108,
+                  "1": 108
+                }
+              },
+              "inputRowsPerSecond": 195.65217391304347,
+              "latestOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 108,
+                  "1": 108
+                }
+              },
+              "metrics": {
+                "avgOffsetsBehindLatest": "0.0",
+                "maxOffsetsBehindLatest": "0",
+                "minOffsetsBehindLatest": "0"
+              },
+              "numInputRows": 72,
+              "processedRowsPerSecond": 190.9814323607427,
+              "startOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 72,
+                  "1": 72
+                }
+              }
+            }
+          ],
+          "stateOperators": [],
+          "timestamp": "2026-09-15T08:14:18.519Z"
+        }
+      ],
+      "query_id": "86ad4cfc-df0d-4425-bc50-9f25ceb7636d",
+      "query_run_id": "c3b4ba7c-610d-4810-a8f0-1fd05f771371",
+      "target": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad",
+      "transport_rows": 216,
+      "unique_event_ids": 216,
+      "unique_transport_keys": 216
+    },
+    {
+      "business_event_digest": "e28fad43b3399ac26960a6f10ee08deeb6e040fe71f245208ad4099801e213b5",
+      "checkpoint": "checkpoints/day04/gps_1084ca306d1c477caf1ab428fa56c3ad",
+      "phase": "restart",
+      "progress": [
+        {
+          "batchId": 3,
+          "durationMs": {
+            "latestOffset": 10,
+            "triggerExecution": 13
+          },
+          "id": "86ad4cfc-df0d-4425-bc50-9f25ceb7636d",
+          "inputRowsPerSecond": 0.0,
+          "name": "masar_gps_1084ca306d1c477caf1ab428fa56c3ad",
+          "numInputRows": 0,
+          "processedRowsPerSecond": 0.0,
+          "runId": "aff641bb-fce1-47f0-accb-89c4550e96c9",
+          "sink": {
+            "description": "DeltaSink[/Users/nouraalmadhi/Desktop/Masar_Data_Engineering/outputs/day01_bronze_jnzj35lx/mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad]",
+            "numOutputRows": -1
+          },
+          "sources": [
+            {
+              "description": "KafkaV2[Subscribe[masar-day04-1084ca306d1c477caf1ab428fa56c3ad]]",
+              "endOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 108,
+                  "1": 108
+                }
+              },
+              "inputRowsPerSecond": 0.0,
+              "latestOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 108,
+                  "1": 108
+                }
+              },
+              "metrics": {
+                "avgOffsetsBehindLatest": "0.0",
+                "maxOffsetsBehindLatest": "0",
+                "minOffsetsBehindLatest": "0"
+              },
+              "numInputRows": 0,
+              "processedRowsPerSecond": 0.0,
+              "startOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 108,
+                  "1": 108
+                }
+              }
+            }
+          ],
+          "stateOperators": [],
+          "timestamp": "2026-09-15T08:14:19.166Z"
+        }
+      ],
+      "query_id": "86ad4cfc-df0d-4425-bc50-9f25ceb7636d",
+      "query_run_id": "aff641bb-fce1-47f0-accb-89c4550e96c9",
+      "target": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad",
+      "transport_rows": 216,
+      "unique_event_ids": 216,
+      "unique_transport_keys": 216
+    },
+    {
+      "business_event_digest": "e28fad43b3399ac26960a6f10ee08deeb6e040fe71f245208ad4099801e213b5",
+      "checkpoint": "checkpoints/day04/gps_1084ca306d1c477caf1ab428fa56c3ad",
+      "phase": "replay",
+      "progress": [
+        {
+          "batchId": 3,
+          "durationMs": {
+            "addBatch": 787,
+            "commitOffsets": 25,
+            "getBatch": 0,
+            "latestOffset": 10,
+            "queryPlanning": 12,
+            "triggerExecution": 865,
+            "walCommit": 29
+          },
+          "id": "86ad4cfc-df0d-4425-bc50-9f25ceb7636d",
+          "inputRowsPerSecond": 0.0,
+          "name": "masar_gps_1084ca306d1c477caf1ab428fa56c3ad",
+          "numInputRows": 2,
+          "processedRowsPerSecond": 2.3121387283236996,
+          "runId": "f267cc41-bb2a-4456-9ed9-373f376d1316",
+          "sink": {
+            "description": "DeltaSink[/Users/nouraalmadhi/Desktop/Masar_Data_Engineering/outputs/day01_bronze_jnzj35lx/mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad]",
+            "numOutputRows": -1
+          },
+          "sources": [
+            {
+              "description": "KafkaV2[Subscribe[masar-day04-1084ca306d1c477caf1ab428fa56c3ad]]",
+              "endOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 110,
+                  "1": 108
+                }
+              },
+              "inputRowsPerSecond": 0.0,
+              "latestOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 110,
+                  "1": 108
+                }
+              },
+              "metrics": {
+                "avgOffsetsBehindLatest": "0.0",
+                "maxOffsetsBehindLatest": "0",
+                "minOffsetsBehindLatest": "0"
+              },
+              "numInputRows": 2,
+              "processedRowsPerSecond": 2.3121387283236996,
+              "startOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 108,
+                  "1": 108
+                }
+              }
+            }
+          ],
+          "stateOperators": [],
+          "timestamp": "2026-09-15T08:14:19.432Z"
+        }
+      ],
+      "query_id": "86ad4cfc-df0d-4425-bc50-9f25ceb7636d",
+      "query_run_id": "f267cc41-bb2a-4456-9ed9-373f376d1316",
+      "target": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad",
+      "transport_rows": 218,
+      "unique_event_ids": 216,
+      "unique_transport_keys": 218
+    },
+    {
+      "business_event_digest": "9ef816903d7f1577b5fa33f55dca3fa3e2e0849501f351e53cee98658549db81",
+      "checkpoint": "checkpoints/day04/gps_1084ca306d1c477caf1ab428fa56c3ad",
+      "phase": "late",
+      "progress": [
+        {
+          "batchId": 4,
+          "durationMs": {
+            "addBatch": 767,
+            "commitOffsets": 29,
+            "getBatch": 0,
+            "latestOffset": 12,
+            "queryPlanning": 13,
+            "triggerExecution": 854,
+            "walCommit": 30
+          },
+          "id": "86ad4cfc-df0d-4425-bc50-9f25ceb7636d",
+          "inputRowsPerSecond": 0.0,
+          "name": "masar_gps_1084ca306d1c477caf1ab428fa56c3ad",
+          "numInputRows": 1,
+          "processedRowsPerSecond": 1.17096018735363,
+          "runId": "feabd700-e27f-4d36-a05d-842894fef275",
+          "sink": {
+            "description": "DeltaSink[/Users/nouraalmadhi/Desktop/Masar_Data_Engineering/outputs/day01_bronze_jnzj35lx/mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad]",
+            "numOutputRows": -1
+          },
+          "sources": [
+            {
+              "description": "KafkaV2[Subscribe[masar-day04-1084ca306d1c477caf1ab428fa56c3ad]]",
+              "endOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 111,
+                  "1": 108
+                }
+              },
+              "inputRowsPerSecond": 0.0,
+              "latestOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 111,
+                  "1": 108
+                }
+              },
+              "metrics": {
+                "avgOffsetsBehindLatest": "0.0",
+                "maxOffsetsBehindLatest": "0",
+                "minOffsetsBehindLatest": "0"
+              },
+              "numInputRows": 1,
+              "processedRowsPerSecond": 1.17096018735363,
+              "startOffset": {
+                "masar-day04-1084ca306d1c477caf1ab428fa56c3ad": {
+                  "0": 110,
+                  "1": 108
+                }
+              }
+            }
+          ],
+          "stateOperators": [],
+          "timestamp": "2026-09-15T08:14:20.598Z"
+        }
+      ],
+      "query_id": "86ad4cfc-df0d-4425-bc50-9f25ceb7636d",
+      "query_run_id": "feabd700-e27f-4d36-a05d-842894fef275",
+      "target": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad",
+      "transport_rows": 219,
+      "unique_event_ids": 217,
+      "unique_transport_keys": 219
+    }
+  ],
+  "raw_table": "mini_lakehouse/bronze/gps_stream/1084ca306d1c477caf1ab428fa56c3ad",
+  "run_id": "1084ca306d1c477caf1ab428fa56c3ad",
+  "scope": "DAY04_NATIVE_STREAMING",
+  "spark_version": "3.5.8",
+  "topic": "masar-day04-1084ca306d1c477caf1ab428fa56c3ad"
+}
